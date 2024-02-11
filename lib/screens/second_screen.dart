@@ -44,6 +44,10 @@ class _SecondSreecnState extends State<SecondSreecn> {
             const Text('Vestibulum a sem elit. Aenean eros nisi, luctus et vehicula ut, sollicitudin ut nulla. Integer scelerisque, ante ac volutpat lacinia, mi nisl congue velit, sit amet viverra lacus ex ac nibh. Morbi pretium, nunc nec convallis sollicitudin, magna ante laoreet turpis, in tristique odio mi vel dui. Praesent sit amet sollicitudin lorem. Donec pellentesque neque sed metus blandit lobortis. Fusce dapibus turpis in posuere finibus.'),
             const SizedBox(height: 20,),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.amber,
+                foregroundColor: Colors.black
+              ),
               onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ScreenGrid())), 
               child: const Text('Pagina GridView'))
           ],
