@@ -1,4 +1,5 @@
 import 'package:basics/screens/screen_basics.dart';
+import 'package:basics/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,6 +20,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const BasicWidgetss(),
+      routes: {
+        'page1': (context) => const BasicWidgetss(),
+        'page2': ((context) => const SecondSreecn())
+      },
     );
   }
 }

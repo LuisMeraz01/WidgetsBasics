@@ -1,5 +1,5 @@
 
-import 'package:basics/screens/second_screen.dart';
+//import 'package:basics/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 
 class BasicWidgetss extends StatefulWidget {
@@ -118,8 +118,11 @@ class _BasicWidgetssState extends State<BasicWidgetss> {
                   const SizedBox(height: 15),
                   ElevatedButton(
                     child: const Text('Cambiar de pantalla', style: TextStyle(color: Colors.black),),
-                    onPressed: () => Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) => const SecondSreecn()))
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'page2');
+                    },
+                    // onPressed: () => Navigator.of(context)
+                    //           .push(MaterialPageRoute(builder: (context) => const SecondSreecn()))
                   )
                 ]
               ),
