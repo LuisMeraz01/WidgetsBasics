@@ -1,5 +1,5 @@
 
-import 'package:basics/screens/screen_grid.dart';
+//import 'package:basics/screens/screen_grid.dart';
 import 'package:flutter/material.dart';
 
 class SecondSreecn extends StatefulWidget {
@@ -48,8 +48,9 @@ class _SecondSreecnState extends State<SecondSreecn> {
                 backgroundColor: Colors.amber,
                 foregroundColor: Colors.black
               ),
-              onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ScreenGrid())), 
-              child: const Text('Pagina GridView'))
+              onPressed: () => Navigator.pushNamed(context, 'page3'),
+              child: const Text('aaa'),
+            )
           ],
           
         ),

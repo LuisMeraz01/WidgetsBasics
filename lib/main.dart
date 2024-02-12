@@ -1,4 +1,5 @@
 import 'package:basics/screens/screen_basics.dart';
+import 'package:basics/screens/screen_grid.dart';
 import 'package:basics/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
       initialRoute: 'page1',
       routes: {
         'page1': (context) => const BasicWidgetss(),
-        'page2': ((context) => const SecondSreecn())
+        'page2': ((context) => const SecondSreecn()),
+        'page3': ((context) => const ScreenGrid())
       },
     );
   }
