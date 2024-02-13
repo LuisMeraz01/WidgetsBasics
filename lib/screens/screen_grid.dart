@@ -77,8 +77,26 @@ class ScreenGrid extends StatelessWidget {
               color: const Color.fromARGB(255, 9, 38, 94), 
               child: const Center(child: Text('9', style: TextStyle(color: Colors.white, fontSize: 30),textAlign: TextAlign.center)),
             ),
+            
+            const Column(
+              
+              children: [
+                SizedBox(
+                  width: 500,
+                  height: 70,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: 'Nombre'
+                    ),
+                  ),
+                ),
+              ],
+            )
+
           ],
         ),
+
+        
       ) 
       
     );
